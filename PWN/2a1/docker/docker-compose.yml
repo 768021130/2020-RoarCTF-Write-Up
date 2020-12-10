@@ -1,0 +1,13 @@
+version: "2"
+services:
+  2a1:
+    image: taqini/2a1
+    build: .
+    restart: unless-stopped
+    ports:
+      - "12000:8888"
+    #security_opt:
+     #- seccomp:unconfined
+    #cap_add:
+    # - SYS_PTRACE
+
